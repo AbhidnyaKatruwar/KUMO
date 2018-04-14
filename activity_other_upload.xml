@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.desai.kumo.MainActivity">
+
+    <Button
+        android:id="@+id/btnPdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Browse PDF"
+        />
+
+    <Button
+        android:id="@+id/btnMusic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Browse APPs"
+        />
+
+    <Button
+        android:id="@+id/btnPpt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Browse PPT"
+        />
+
+    <Button
+        android:id="@+id/btnVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Browse Videos"
+        />
+
+    <Button
+        android:id="@+id/btnDoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Browse Documents"
+        />
+</LinearLayout>

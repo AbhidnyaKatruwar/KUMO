@@ -1,58 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.example.desai.kumo.MainActivity">
+    tools:context="com.example.hp.app.MainActivity">
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
     <Button
-        android:layout_width="match_parent"
+        android:id="@+id/music"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Browse image"
-        android:onClick="btnBrowse_Click"/>
-
+        android:text="Music"
+        android:layout_weight="1"/>
     <Button
-        android:layout_width="match_parent"
+        android:id="@+id/video"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Show images"
-        android:onClick="btnShowListImage_Click"/>
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtImageName"
-        android:hint="Image Name"
-     />
-
-    <TextView
-        android:id="@+id/tvLink"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textIsSelectable="true"
-        android:hint = "Get the link here"
-        android:text="" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_gravity="center" />
-
-    <Button
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="btnUpload_Click"
-        android:text="Upload image" />
-
-    <Button
-        android:id="@+id/btnOtherUpload"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="btnUpload_Other"
-        android:text="Upload Other Files" />
-
-
-</LinearLayout>
+        android:text="Video"
+        android:layout_weight="1"
+        tools:ignore="InvalidId" />
+        <Button
+            android:id="@+id/videoPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VideoPlayer"
+            android:layout_weight="1"
+            tools:ignore="InvalidId" />
+        <Button
+            android:id="@+id/musicPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MusicStreaming"
+            android:layout_weight="1"
+            tools:ignore="InvalidId" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

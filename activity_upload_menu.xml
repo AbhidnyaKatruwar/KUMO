@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.suruchi.kumo.UploadMenu"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/camera"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="13dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/cam"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/app"
+        app:layout_constraintEnd_toStartOf="@+id/docx"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/docx"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="199dp"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/docx"
+        app:layout_constraintBottom_toTopOf="@+id/video"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/camera"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/app"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/android"
+        app:layout_constraintBottom_toTopOf="@+id/ppt"
+        app:layout_constraintEnd_toStartOf="@+id/music"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/camera"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/music"
+        android:layout_width="0dp"
+        android:layout_height="165dp"
+        android:layout_marginBottom="165dp"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/hp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/app"
+        app:layout_constraintTop_toBottomOf="@+id/docx"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/ppt"
+        android:layout_width="0dp"
+        android:layout_height="138dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/ppt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/video"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/video"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/vide"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ppt"
+        app:layout_constraintTop_toBottomOf="@+id/docx" />
+</android.support.constraint.ConstraintLayout>
